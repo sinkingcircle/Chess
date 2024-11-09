@@ -9,15 +9,21 @@
   "jsnbversion": "v0.1",
   "cells": [
     {
-      "code": "<h1> chess </h1>\n<p> This notebook is gonna implement voice controlled chess </p>",
+      "code": "<div style=\"width: 100px; height: 100px; background-color: red;\"></div>\n<script>\n  console.log(\"This is a test.\");\n</script>\n",
       "status": "",
-      "output": "<h1> chess </h1>\n<p> This notebook is gonna implement voice controlled chess </p>",
+      "output": "<div style=\"width: 100px; height: 100px; background-color: red;\"></div>\n<script>\n  console.log(\"This is a test.\");\n</script>\n",
       "type": "html"
     },
     {
-      "code": "<h2> Push to Git </h2>\n<p> Taruns Push </p>\n",
+      "code": "<!-- Create the div for the grid -->\n<div id=\"simpleGrid\" style=\"width: 400px; height: 400px; border: 1px solid black;\"></div>\n\n<script>\n  const grid = document.getElementById(\"simpleGrid\");\n\n  // Square size (adjusted to fit 4x4 within 400px)\n  const squareSize = 90;\n\n  // Loop to create 16 squares (4x4 grid)\n  for (let row = 0; row < 4; row++) {\n    for (let col = 0; col < 4; col++) {\n      const square = document.createElement(\"div\");\n\n      // Set size and background color\n      square.style.width = `${squareSize}px`;\n      square.style.height = `${squareSize}px`;\n      square.style.backgroundColor = (row + col) % 2 === 0 ? \"#f0d9b5\" : \"#b58863\"; // Alternating colors\n\n      // Make the squares inline-block elements\n      square.style.display = \"inline-block\";\n\n      // Append square to the grid\n      grid.appendChild(square);\n    }\n  }\n</script>\n",
       "status": "",
-      "output": "<h2> Push to Git </h2>\n<p> Taruns Push </p>\n",
+      "output": "<!-- Create the div for the grid -->\n<div id=\"simpleGrid\" style=\"width: 400px; height: 400px; border: 1px solid black;\"></div>\n\n<script>\n  const grid = document.getElementById(\"simpleGrid\");\n\n  // Square size (adjusted to fit 4x4 within 400px)\n  const squareSize = 90;\n\n  // Loop to create 16 squares (4x4 grid)\n  for (let row = 0; row < 4; row++) {\n    for (let col = 0; col < 4; col++) {\n      const square = document.createElement(\"div\");\n\n      // Set size and background color\n      square.style.width = `${squareSize}px`;\n      square.style.height = `${squareSize}px`;\n      square.style.backgroundColor = (row + col) % 2 === 0 ? \"#f0d9b5\" : \"#b58863\"; // Alternating colors\n\n      // Make the squares inline-block elements\n      square.style.display = \"inline-block\";\n\n      // Append square to the grid\n      grid.appendChild(square);\n    }\n  }\n</script>\n",
+      "type": "html"
+    },
+    {
+      "code": "<div id=\"simpleGrid\" style=\"display: grid; grid-template-columns: repeat(4, 100px); grid-gap: 5px;\"></div>\n<script>\n  const grid = document.getElementById(\"simpleGrid\");\n\n  // Create 16 divs to form a 4x4 grid\n  for (let i = 0; i < 16; i++) {\n    const cell = document.createElement(\"div\");\n    cell.style.width = \"100px\";\n    cell.style.height = \"100px\";\n    cell.style.backgroundColor = (i % 2 === 0) ? \"#f0d9b5\" : \"#b58863\"; // Alternate colors\n    grid.appendChild(cell);\n  }\n</script>\n",
+      "status": "",
+      "output": "<div id=\"simpleGrid\" style=\"display: grid; grid-template-columns: repeat(4, 100px); grid-gap: 5px;\"></div>\n<script>\n  const grid = document.getElementById(\"simpleGrid\");\n\n  // Create 16 divs to form a 4x4 grid\n  for (let i = 0; i < 16; i++) {\n    const cell = document.createElement(\"div\");\n    cell.style.width = \"100px\";\n    cell.style.height = \"100px\";\n    cell.style.backgroundColor = (i % 2 === 0) ? \"#f0d9b5\" : \"#b58863\"; // Alternate colors\n    grid.appendChild(cell);\n  }\n</script>\n",
       "type": "html"
     }
   ],
